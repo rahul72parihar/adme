@@ -1,0 +1,13 @@
+.header {
+  padding: 40px 0;
+  background-color: blanchedalmond;
+  display: flex;
+  flex-direction: row;
+}
+.headerLogo {
+  max-width: 200px;
+  padding-left: 20px;
+}
+.headerTitle {
+  flex: 1;
+}

@@ -1,0 +1,49 @@
+.container {
+  background-color: aquamarine;
+  display: grid;
+  grid-template-columns: 1.1fr 1fr 0.4fr 1.5fr;
+  grid-template-rows: 20vw 20vw 20vw;
+  gap: 10px;
+  padding: 10px;
+  width: 90vw;
+  grid-auto-flow: row;
+  margin: 0 auto;
+  grid-template-areas:
+    "mainImage mainImage mainImage topRight"
+    "mainImage mainImage mainImage middleRight"
+    "bottomLeft bottomLeft bottomRight bottomRight";
+}
+@media screen and (max-width: 600px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .imageElement {
+    height: 100%;
+    width: 100%;
+  }
+}
+.bottomRight {
+  grid-area: bottomRight;
+}
+
+.bottomLeft {
+  grid-area: bottomLeft;
+}
+
+.mainImage {
+  grid-area: mainImage;
+}
+
+.topRight {
+  grid-area: topRight;
+}
+
+.middleRight {
+  grid-area: middleRight;
+}
+
+.imageElement {
+  height: 100%;
+  width: 100%;
+}
